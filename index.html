@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Passoward_Generator_project</title>
+</head>
+<body>
+     <div class="container">
+          <h1>PASSWORD GENERATOR</h1>
+
+          <div class="display-container">
+             
+               <input readonly placeholder="Passoward"class="display" data-passowrdDisplay>
+               <button data-copy>
+                    <span datacopyMsg></span>
+                    <img src="./img/copy-7571066_1920.png" alt="copy" width="23" height="23">
+               </button>
+
+
+          </div>
+
+          <div class="inputcontainer">
+               <div class="lenght-container">
+                    <p>Passoward lenght</p>
+                    <p data-lenghtNumber> 0 </p>
+               </div>
+               <!-- slider -->
+               <input type="range" min="1" max="10" class="slider" step="1" data-lenghtslider>
+          <!-- checkboxes -->
+          <div>
+               <input type="checkbox" id="upperCase">
+               <lable for="uppercase">Inclues UpperCase letters</lable>
+          </div>
+   <!-- checkboxes 2 -->
+   <div>
+     <input type="checkbox" id="lowecase">
+     <lable for="lowecase">Inclues LowerCase letters</lable>
+</div>
+  <!-- checkboxes 3 -->
+  <div>
+     <input type="checkbox" id="numbers">
+     <lable for="numbers">Inclues Numbers </lable>
+</div>  <!-- checkboxes 4-->
+<div>
+     <input type="checkbox" id="symbols">
+     <lable for="symbols">Inclues Symbols </lable>
+</div>
+<!-- strength section  -->
+<div class="strength-container">
+     <p>Strength</p>
+     <div data-indicator=""></div>
+</div>
+<!-- gerter passoward button -->
+
+
+<button class="generateButton">Generate Passoward</button>
+
+
+          </div>
+
+
+
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
