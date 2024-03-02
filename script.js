@@ -41,4 +41,3 @@ function gernerateLowerCase(){
 function gernerateUpperCase(){
      return String.fromCharCode(gerRndInteger(65,91));
  }
- function gererates
